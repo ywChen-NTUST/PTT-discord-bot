@@ -2,7 +2,6 @@ import requests
 import nextcord
 from nextcord.ext import commands
 
-from .modules.params import GUILD_ID
 from .modules.description import DESCRIPTION
 from .modules.parser import parse_ptt_boardpage
 from .modules.formatter import make_article_embed
@@ -12,7 +11,7 @@ class Board(commands.Cog):
 	def __init__(self, bot: commands.Bot) -> None:
 		self.bot = bot
     
-	@nextcord.slash_command(guild_ids=[GUILD_ID])
+	@nextcord.slash_command()
 	async def board(interaction: nextcord.Interaction):
 		"""
 		This will never get called since it has subcommands.

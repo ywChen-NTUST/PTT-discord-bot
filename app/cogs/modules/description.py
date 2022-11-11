@@ -11,6 +11,10 @@ DESCRIPTION = {
         "help": {
             "command": "/help",
             "describe": "Show help menu"
+        },
+        "sync": {
+            "command": "/sync",
+            "describe": "(GUILD ONLY) Sync command to all servers"
         }
     },
     "PTT": {
